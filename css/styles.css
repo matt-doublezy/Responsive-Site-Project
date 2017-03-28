@@ -1,0 +1,280 @@
+/**************************
+General
+**************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;;
+  background-color: #e3e1e1;
+  color: #0a30b8;
+  text-align: center;
+  line-height: 20px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #0a30b8;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 275;
+}
+
+h1,
+h2 {
+  color: orange;
+  font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+  color: orange;
+}
+
+/*****************
+Header
+*****************/
+
+header h1 {
+  margin: 35px 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.intro img {
+  max-width: 70%;
+}
+
+/* =================================
+Projects
+==================================== */
+.projects {
+  padding-top: 1em;
+  padding-right:1em;
+  padding-bottom: 1em;
+  text-align: center;
+  margin-top: 15px;
+  background-color: white;
+  list-style: none;
+}
+
+.portfolio {
+  margin-top: 30px;
+}
+
+/* =================================
+Footer
+==================================== */
+.skills {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contactinfo h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.contactinfo {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #595b60;
+}
+
+.footer a {
+       text-decoration: none;
+}
+
+footer nav ul {
+  list-style: none;
+}
+
+footer li,
+footer p {
+  display: inline-block;
+  font-weight: bold;
+}
+
+footer nav {
+  float: right;
+}
+
+footer a {
+  text-transform: uppercase;
+  margin-right: 1.8em;
+}
+
+footer .name {
+  float: left;
+  margin-left: 10px;
+}
+
+footer .backtotop {
+  float: right;
+}
+
+.footernav {
+  display: none;
+}
+
+/* =================================
+Media Query 768
+==================================== */
+
+@media (min-width:768px) {
+
+  header nav li {
+    display: inline-block;
+  }
+
+  header nav a {
+  display: inline-block;
+}
+
+  header .name {
+        font-size: 2em;
+        margin-left: 20px;
+        margin-bottom: 20px:
+}
+
+  .top-header {
+    height: 150px;
+    padding-top: 0;
+  }
+
+  .top-nav {
+  		margin-top: .2em;
+  	}
+
+  .top-nav a {
+  		margin: 1em;
+  		padding-bottom: 1em;
+      flex-direction: row;
+      float: right;
+  }
+
+  li {
+		list-style: none;
+}
+
+  .intro {
+    width: 90%;
+    margin: 0 auto;
+    font-size: large;
+}
+
+  .intro p {
+		text-align: left;
+		font-size: 1em;
+		line-height: 1.3em;
+}
+
+  .intro img {
+		float: right;
+		width: 45%;
+		padding-left: 1em;
+}
+
+  .projects {
+		margin-top: 30px;
+		padding-top: 0;
+}
+
+  .projects ul {
+		text-decoration: none;
+}
+
+  .project-image {
+    max-width: 50%;
+    float: left;
+    padding-left: 0;
+}
+
+  .caption {
+		width: 75%;
+		margin: 0 auto 2em;
+}
+
+.skills li {
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.contactinfo p {
+  font-size: 1.2em;
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+}
+
+.footernav {
+   display: inline;
+ }
+
+ .backtotop {
+   display: none;
+}
+
+.clearfix::after {
+	    content: "";
+	    display: table;
+	    clear: both;
+}
+
+}
+
+/* =================================
+Media Query 1024
+==================================== */
+@media (min-width:1024px) {
+
+  header .name {
+		float: left;
+}
+
+ header nav {
+  width: 50%;
+  margin-top: 24px;
+  text-align: right;
+  float: right;
+}
+
+.intro img {
+  width: 40%;
+  float: right;
+}
+
+  .projects {
+		width: 95%;
+		margin: auto;
+	}
+
+	.projects li {
+		margin: auto;
+	}
+
+.clearfix::after {
+	    content: "";
+	    display: table;
+	    clear: both;
+  }
+}
