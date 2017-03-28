@@ -49,8 +49,8 @@ header h1 {
 
 header nav ul {
   list-style: none;
-  padding: 30px;
   margin-top: 10px;
+  margin-right: 35px;
 }
 
 .intro img {
@@ -133,6 +133,12 @@ footer .backtotop {
 
 .footernav {
   display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 /* =================================
@@ -237,12 +243,6 @@ Media Query 768
    display: none;
 }
 
-  .clearfix::after {
-	  content: "";
-	  display: table;
-	  clear: both;
-}
-
 }
 
 /* =================================
@@ -252,17 +252,19 @@ Media Query 1024
 
   header .name {
 	   float: left;
+     margin-left: 70px;
 }
 
   header nav {
     width: 50%;
     margin-top: 24px;
     text-align: right;
-    float: right;
+    display: inline-block;
+    margin-right: -300px;
 }
 
   .intro-image img {
-    width: 50%;
+    width: 40%;
     display: inline-block;
     float: right;
 }
@@ -289,7 +291,7 @@ Media Query 1024
 }
 
 .clearfix::after {
-	  content: "";
+	  content: " ";
 	  display: table;
 	  clear: both;
   }
