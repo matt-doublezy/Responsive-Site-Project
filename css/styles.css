@@ -146,13 +146,13 @@ Media Query 768
   }
 
   header nav a {
-  display: inline-block;
+    display: inline-block;
 }
 
   header .name {
-        font-size: 2em;
-        margin-left: 20px;
-        margin-bottom: 20px:
+    font-size: 2em;
+    margin-left: 20px;
+    margin-bottom: 20px:
 }
 
   .top-header {
@@ -161,14 +161,14 @@ Media Query 768
   }
 
   .top-nav {
-  		margin-top: .2em;
+  	margin-top: .2em;
   	}
 
   .top-nav a {
-  		margin: 1em;
-  		padding-bottom: 1em;
-      flex-direction: row;
-      float: right;
+  	margin: 1em;
+  	padding-bottom: 1em;
+    flex-direction: row;
+    float: right;
   }
 
   li {
@@ -181,16 +181,19 @@ Media Query 768
     font-size: large;
 }
 
-  .intro p {
+  .paragraph-intro {
 		text-align: left;
 		font-size: 1em;
 		line-height: 1.3em;
+    width: 45%;
+    float: left;
+    display: inline-block;
 }
 
-  .intro img {
-		float: right;
+  .intro-image img {
+	  float: right;
 		width: 45%;
-		padding-left: 1em;
+		display: inline-block;
 }
 
   .projects {
@@ -213,31 +216,31 @@ Media Query 768
 		margin: 0 auto 2em;
 }
 
-.skills li {
-  text-align: center;
-  margin-top: 20px;
-  margin-right: 20px;
+  .skills li {
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
-.contactinfo p {
-  font-size: 1.2em;
-  text-align: center;
-  width: 50%;
-  display: inline-block;
+  .contactinfo p {
+    font-size: 1.2em;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
 }
 
-.footernav {
-   display: inline;
+  .footernav {
+    display: inline;
  }
 
- .backtotop {
+  .backtotop {
    display: none;
 }
 
-.clearfix::after {
-	    content: "";
-	    display: table;
-	    clear: both;
+  .clearfix::after {
+	  content: "";
+	  display: table;
+	  clear: both;
 }
 
 }
@@ -248,20 +251,27 @@ Media Query 1024
 @media (min-width:1024px) {
 
   header .name {
-		float: left;
+	   float: left;
 }
 
- header nav {
-  width: 50%;
-  margin-top: 24px;
-  text-align: right;
-  float: right;
+  header nav {
+    width: 50%;
+    margin-top: 24px;
+    text-align: right;
+    float: right;
 }
 
-.intro img {
-  width: 40%;
-  float: right;
+  .intro-image img {
+    width: 50%;
+    display: inline-block;
+    float: right;
 }
+
+  .paragraph-intro {
+    display: inline-block;
+    float: left;
+    width: 50%;
+  }
 
   .projects {
 		width: 95%;
@@ -272,9 +282,15 @@ Media Query 1024
 		margin: auto;
 	}
 
+  .project-image {
+    max-width: 33%;
+    float: left;
+    padding-left: 0;
+}
+
 .clearfix::after {
-	    content: "";
-	    display: table;
-	    clear: both;
+	  content: "";
+	  display: table;
+	  clear: both;
   }
 }
