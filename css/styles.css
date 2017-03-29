@@ -39,6 +39,10 @@ a:hover {
   color: orange;
 }
 
+ul li {
+  list-style: none;
+}
+
 /*****************
 Header
 *****************/
@@ -71,7 +75,7 @@ Projects
 }
 
 .portfolio {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 /* =================================
@@ -80,6 +84,10 @@ Footer
 .skills {
   text-align: center;
   margin-top: 20px;
+}
+
+.skills ul {
+  padding: 0;
 }
 
 .contactinfo h2 {
@@ -214,7 +222,7 @@ Media Query 768
   .project-image {
     max-width: 50%;
     float: left;
-    padding-left: 0;
+    padding: 10px;
 }
 
   .caption {
